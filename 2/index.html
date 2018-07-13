@@ -11,9 +11,94 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>IntroJS | 2</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+    	
+    	.imagen {
+    		-webkit-filter: grayscale(100%);
+		    -moz-filter:    grayscale(100%);
+		    -ms-filter:     grayscale(100%);
+		    -o-filter:      grayscale(100%);
+		    filter: gray;
+		}
+
+		.tran {
+			transition: 1s;
+		}
+
+		.col-md-12 {
+			text-align: center;
+			padding-left: 0;
+			padding-right: 0;
+			margin-right: 0;
+			margin-left: 0;
+		}
+
+		.row {
+			margin-right: 0;
+			margin-left: 0;
+		}
+
+
+
+    </style>
   </head>
   <body>
+
+	<div class="row">
+	<div class="container">
+		
+  		<div class="col-md-12">	
+  			<img  class="imagen tran" src="../images/DSC_0105.JPG" alt="imagen1">
+  			<img  class="imagen tran" src="../images/DSC_0106.JPG" alt="imagen2">		
+  		</div>
+  	
+  		<div class="col-md-12">	
+  			<img  class="imagen tran" src="../images/DSC_0107.JPG" alt="imagen3">
+  			<img  class="imagen tran" src="../images/DSC_0108.JPG" alt="imagen4">			
+  		</div>
+  		
+  		<div class="col-md-12">	
+  			<img  class="imagen tran" src="../images/DSC_0109.JPG" alt="imagen5">
+  			<img  class="imagen tran" src="../images/DSC_0110.JPG" alt="imagen6">
+  		</div>
+	
+	</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+	</script>
+  	
+  	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <script>
+
+  	$(document).ready(function(){
+  		$("img").click(function(){
+  			$(this).toggleClass("imagen", "tran");
+  		})	
+		
+	});
+
+	
+	
+
+
+	
+
+	</script>
 
   </body>
 </html>
